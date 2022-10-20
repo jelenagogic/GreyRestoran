@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0;
+            }
+            
+            #public{
+               margin-left: -10px;
+            }
+
+
+            #header{
+                position: relative;
+                min-height: 110px;
+                z-index: 200;
+            }
+            
+            #slika_top{
+                display: block;
+                margin: 0 auto;
+                width: 100% ; 
+                height: auto ;
+            }
+            
+            
+            #menu{
+                position: absolute;
+                left:0;
+                width: 100%;
+                height: 110px;
+                background: rgba(26, 10, 9, 0.87);
+                border: 0;
+                margin:auto; 
+                /*da uvek bude na vrhu*/
+                top:0;
+                position: fixed;
+            }
+            
+            #logo{
+                opacity: 0.6;
+                display: block ;
+                width: auto; 
+                height: 110px; 
+                background: rgba(26, 10, 9, 0.87);
+            }
+            
+            #menu ul{
+                list-style: none;
+                display:block;
+                width: 650px;
+                left:500px;      /*pomera meni*/
+                position: absolute;
+                top:15px;
+                right: 55px;
+            }
+            
+            #menu li{
+                float:left; /*da se poredjaju desno*/
+                padding: 15px; /*razmak izmedju opcija*/
+                color:white;
+                font-weight: bold;
+                
+            }
+            
+            #menu li a{
+                color:white;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            
+            #menu a:hover{
+               color:orange; 
+               cursor:pointer;
+            }
+            
+            #menu span{
+                color:orange;
+            }
+  
+            #posmeni{ 
+                position: relative;
+                margin: auto;
+                width: 1200px;
+                height: 100%;
+            }
+            
+            #content{
+                position: relative;
+                margin:auto;
+                width: 1200px;
+                height: 4200px;
+            }
+            
+           h1::before {
+              
+                content:  url("images/linija.png"); /*crtice*/
+                opacity: 0.6;
+                margin: 14px;
+           }
+           
+           
+           h1::after {
+                content:  url("images/linija.png");
+                opacity: 0.6;
+                margin: 14px;
+           }
+         
+   
+            #ucontentu h1{
+                margin-top: 30px;
+                text-transform:uppercase;
+                text-align: center;
+                height: 50px;
+                font-weight: 400;
+            }
+            
+            #dobrodosli{
+             /*   margin-top: 40px;*/
+                margin-top: -20px;
+                text-align: center;
+                font-size: 19px;
+            }
+            
+            .prazan{
+                height: 40px;
+            }
+            
+            /*Deo o Grey-u podesavanja*/
+            
+            #divogreyu{
+                height: 600px;
+                padding-top: 80px;
+            }
+            
+            #slika0greyu{
+                width: 500px;
+                height: 500px;
+                float:left;
+                padding: 5px;
+            }
+            
+            #pogreyu{
+                float:left;
+                width: 550px;
+                font-size: 19px;
+                margin: 0 20px;
+                padding: 0 40px;
+                text-align:left;
+            }
+            
+            /*Grey meni, podesavanja*/
+            
+            #divmeni{
+                height: 1000px;
+                text-align: center;
+                padding-top: 80px;
+            }
+            
+            #pmeni{
+                padding: 20px;
+                font-size: 19px;
+            }
+            
+            #divmeni a{
+                color:red;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 22px;
+            }
+            
+            #divmenislike{
+               
+                height: 600px;
+                padding-left: 13%;
+               
+            }
+            
+            .slikezahranu{
+                width: 300px;
+                height: 300px;
+                float: left;
+                
+            }
+            
+            /*uveca slike*/
+            .slikezahranu:hover {
+               -ms-transform: scale(1.5); /* IE 9 */
+               -webkit-transform: scale(1.5); /* Safari 3-8 */
+                transform: scale(1.5); 
+                cursor:pointer;
+            }
+            
+            #divgalerija{
+                text-align: center;
+                padding-top: 80px;
+            }
+            
+            #pgalerija{
+                font-size: 19px;
+            }
+            
+            #galerija{
+                height: 1100px;
+                position: relative;
+            }
+            
+            .galerijaslike1{
+                width: 300px;
+                height: 300px;
+                margin: 5px;
+                float:left;
+            }
+            
+            .galerijaslike1:hover {
+                -ms-transform: scale(1.5); /* IE 9 */
+                -webkit-transform: scale(1.5); /* Safari 3-8 */
+                transform: scale(1.5); 
+                cursor:pointer;
+            }
+            
+            /* za 6 istih slika u galeriji*/
+            .divzaslike1{
+                height: 300px;
+                padding-left: 130px;
+                
+            }
+            
+            .galerijaslike2{
+                width: 380px;
+                height: 400px;
+                margin: 5px;
+                float:left;
+            }
+            
+            .galerijaslike2:hover {
+                -ms-transform: scale(1.5); /* IE 9 */
+                -webkit-transform: scale(1.5); /* Safari 3-8 */
+                transform: scale(1.5); 
+                cursor:pointer;
+            }
+            
+            /*za tri vece slike u galeriji*/
+            .divzaslike2{
+                padding-left: 15px;
+            }
+         
+            #kontakt{
+                font-size: 19px;
+                text-align: center;
+            }
+            
+            
+            #footer{
+                background-color: rgba(26, 10, 9, 0.87);
+                color:white;
+                height: 25px;
+                text-align: center;
+                padding-top: 4px;
+                
+            }
+            #ufooteru{
+                width: 1200px;
+                margin:auto;
+            }
+            
+            #datum{
+                float: right;
+                color: white;
+            }
+            
+           
+            #fiksiranaslika{
+                height: 150px;
+                background-image: url('images/grey6.jpg');
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;  /*preko celog diva*/
+                max-width: 2000px;
+            }
+            
